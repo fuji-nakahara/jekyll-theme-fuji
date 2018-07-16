@@ -1,0 +1,35 @@
+$font-size-lg: 1.25rem;
+$line-height: 1.8;
+
+.novel {
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 Pr6N", "Hiragino Mincho Pr6N", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 StdN", "Hiragino Mincho StdN", HiraMinProN-W3, HGS明朝B, HG明朝B, dcsymbols, "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pr6N", "Hiragino Kaku Gothic Pr6N", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", "Segoe UI", Verdana, メイリオ, Meiryo, sans-serif;
+  line-height: $line-height;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $font-size-lg;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  hr {
+    border: 0;
+    margin: 0;
+    height: 1.0rem * $line-height;
+  }
+
+  em {
+    font-style: normal;
+    text-emphasis-style: filled dot;
+    -webkit-text-emphasis-style: filled dot;
+  }
+
+  @media (min-width: 768px) {
+    font-size: $font-size-lg;
+
+    hr {
+      height: $font-size-lg * $line-height;
+    }
+  }
+}

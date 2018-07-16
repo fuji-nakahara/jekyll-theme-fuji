@@ -1,0 +1,14 @@
+<nav class="mb-3">
+  <ul class="pagination justify-content-center">
+    {%- if page.previous -%}
+      <li class="page-item">
+        <a href="{{ page.previous.url | relative_url }}" class="page-link"><span aria-hidden="true">&laquo;</span>{{ page.previous.title }}</a>
+      </li>
+    {%- endif -%}
+    {%- if page.next -%}
+      <li class="page-item">
+        <a href="{{ page.next.url | relative_url }}" class="page-link">{{ page.next.title }}<span aria-hidden="true">&raquo;</span></a>
+      </li>
+    {%- endif -%}
+  </ul>
+</nav>
