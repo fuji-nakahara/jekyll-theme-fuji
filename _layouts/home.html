@@ -14,7 +14,11 @@ layout: default
 {%- if site.posts.size > 0 -%}
   <section class="mb-3">
     <div class="list-group">
-      {%- for post in site.posts -%}
+      {%- assign posts = site.posts -%}
+      {%- if site.reverse_posts_order -%}
+        {%- assign posts = posts | reverse -%}
+      {%- endif -%}
+      {%- for post in posts -%}
         <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action">
           <h5>{{ post.title }}</h5>
           {%- if site.show_excerpts -%}
