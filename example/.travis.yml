@@ -1,0 +1,23 @@
+sudo: false
+
+language: ruby
+
+env:
+  global:
+    - JEKYLL_ENV=production
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+cache: bundler
+
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --disable-external # --url-swap '\A\/baseurl:'
+
+deploy:
+  provider: pages
+  github-token: # Run `travis encrypt YOUR_TOKEN -a deploy.github-token`
+  skip-cleanup: true
+  local-dir: _site
+  target_branch: gh-pages
+  on:
+    branch: master
