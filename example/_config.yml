@@ -49,6 +49,7 @@ defaults:
 
 # Theme settings
 homepage:
+repository: fuji-nakahara/jekyll-theme-fuji
 google_analytics:
 reverse_posts_order: false
 show_excerpts: true
