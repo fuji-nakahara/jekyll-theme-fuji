@@ -36,6 +36,10 @@ $line-height: 1.8;
     -webkit-text-emphasis-style: filled dot;
   }
 
+  pre {
+    white-space: pre-wrap;
+  }
+
   @media (min-width: 768px) {
     font-size: $font-size-lg;
 
