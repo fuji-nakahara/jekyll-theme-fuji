@@ -5,6 +5,7 @@ gem "jekyll"
 gem 'jekyll-theme-fuji', git: 'https://github.com/fuji-nakahara/jekyll-theme-fuji.git'
 
 group :jekyll_plugins do
+  gem 'jekyll-build-ebook'
   gem 'jekyll-fuji_markdown'
 end
 
