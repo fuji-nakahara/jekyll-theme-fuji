@@ -21,6 +21,7 @@ description: >- # this means to ignore newlines until "url:"
   Google search results) and in your feed.xml site description.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
+version: v0.1.0
 timezone: Asia/Tokyo
 lang: ja_JP
 
@@ -52,6 +53,7 @@ defaults:
 homepage:
 repository: fuji-nakahara/jekyll-theme-fuji
 google_analytics:
+show_ebooks_from_github_releases: true
 reverse_posts_order: false
 show_excerpts: true
 show_date: true
@@ -61,4 +63,5 @@ header_pages:
 
 # Ebook settings
 ebook:
+  file_name: example
   page_progression_direction: rtl

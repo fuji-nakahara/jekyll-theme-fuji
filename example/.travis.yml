@@ -12,7 +12,7 @@ cache: bundler
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external # --url-swap '\A\/baseurl:'
-  - bundle exec jekyll build-ebook --file_name example --kindle
+  - bundle exec jekyll build-ebook --kindle
 
 deploy:
   - provider: pages
