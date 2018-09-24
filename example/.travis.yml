@@ -12,12 +12,22 @@ cache: bundler
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external # --url-swap '\A\/baseurl:'
+  - bundle exec jekyll build-ebook --file_name example --kindle
 
 deploy:
-  provider: pages
-  github-token: # Run `travis encrypt YOUR_TOKEN -a deploy.github-token`
-  skip-cleanup: true
-  local-dir: _site
-  target_branch: gh-pages
-  on:
-    branch: master
+  - provider: pages
+    github-token: # Run `travis encrypt YOUR_TOKEN`
+    skip-cleanup: true
+    local-dir: _site
+    target_branch: gh-pages
+    on:
+      branch: master
+  - provider: releases
+    api_key:
+      secure: # Run `travis encrypt YOUR_TOKEN`
+    skip_cleanup: true
+    file:
+      - _ebook/example.epub
+      - _ebook/example.mobi
+    on:
+      tags: true
