@@ -23,12 +23,23 @@ layout: default
   </aside>
   {%- if site.show_ebooks_from_github_releases -%}
     <aside>
-      <ul class="list-unstyled mb-0">
+      <ul class="list-unstyled">
         <li><a href="https://github.com/{{ site.repository }}/releases/download/{{ site.version }}/{{ site.ebook.file_name }}.epub" target="_blank">{% octicon book %} .epub</a></li>
         <li><a href="https://github.com/{{ site.repository }}/releases/download/{{ site.version }}/{{ site.ebook.file_name }}.mobi" target="_blank">{% octicon book %} .mobi (for Kindle)</a></li>
       </ul>
     </aside>
   {%- endif -%}
+  <aside>
+    <a class="twitter-share-button"
+       href="https://twitter.com/share"
+       data-text="{{ site.title }}"
+       data-url="{{ '/' | absolute_url }}"
+       data-via="{{ site.twitter.username }}"
+       data-related="{{ site.twitter.username }}"
+       data-size="large">
+      Tweet
+    </a>
+  </aside>
 </header>
 
 <section class="mb-3">

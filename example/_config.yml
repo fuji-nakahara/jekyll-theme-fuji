@@ -61,6 +61,10 @@ date_format: "%Y年%m月%d日"
 header_pages:
   - about.md
 
+# SEO
+twitter:
+  username: fuji_nakahara
+
 # Ebook settings
 ebook:
   file_name: example

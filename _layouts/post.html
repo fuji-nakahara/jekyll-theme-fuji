@@ -4,7 +4,7 @@ layout: default
 
 <article class="mb-3">
 
-    {%- include pagination.html -%}
+  {%- include pagination.html -%}
 
   <header class="mb-3">
     <h1>{{ page.title }}</h1>
@@ -13,6 +13,17 @@ layout: default
   <main class="mb-3">
     {{ content }}
   </main>
+
+  <aside class="mb-3">
+    <a class="twitter-share-button"
+       href="https://twitter.com/share"
+       data-text="{{ page.title }} - {{ site.title }}"
+       data-url="{{ page.url | absolute_url }}"
+       data-via="{{ site.twitter.username }}"
+       data-related="{{ site.twitter.username }}">
+      Tweet
+    </a>
+  </aside>
 
   {%- include pagination.html -%}
 
