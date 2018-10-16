@@ -42,6 +42,7 @@ theme: jekyll-theme-fuji
 #   - vendor/ruby/
 
 # Front Matter defaults
+permalink: none
 defaults:
   - scope:
       path: ""
