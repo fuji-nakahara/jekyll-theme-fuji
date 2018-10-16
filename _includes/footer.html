@@ -1,4 +1,4 @@
 <footer class="text-center mb-3">
   {%- assign current_year = site.time | date: '%Y' -%}
-  <small>&copy; {{ site.copyright_year | default: current_year }} {{ site.author | default: site.title }}</small>
+  <small>&copy; {{ site.copyright_year | default: current_year }} <a href="{{ site.homepage | default: default_path }}" class="text-dark">{{ site.author | default: site.title }}</a></small>
 </footer>
