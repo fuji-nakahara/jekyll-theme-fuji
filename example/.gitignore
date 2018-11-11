@@ -2,3 +2,6 @@ _site
 _ebook
 .sass-cache
 .jekyll-metadata
+
+# jekyll-deploy-shosetsu
+.deploy-shosetsu.yml
