@@ -29,6 +29,18 @@ layout: default
       </ul>
     </aside>
   {%- endif -%}
+  {%- if site.kakuyomu.work_id or site.narou.ncode -%}
+  <aside>
+    <ul class="list-inline">
+      {%- if site.kakuyomu.work_id -%}
+        <li class="list-inline-item"><a href="https://kakuyomu.jp/works/{{ site.kakuyomu.work_id }}" target="_blank">カクヨム</a></li>
+      {%- endif -%}
+      {%- if site.narou.ncode -%}
+        <li class="list-inline-item"><a href="https://ncode.syosetu.com/{{ site.narou.ncode | downcase }}/" target="_blank">小説家になろう</a></li>
+      {%- endif -%}
+    </ul>
+  </aside>
+  {%- endif -%}
   <aside>
     <a class="twitter-share-button"
        href="https://twitter.com/share"
