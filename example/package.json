@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "textlint": "textlint"
+  },
+  "devDependencies": {
+    "textlint": "latest",
+    "textlint-rule-preset-jtf-style": "latest"
+  }
+}

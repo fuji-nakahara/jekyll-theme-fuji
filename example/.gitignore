@@ -5,3 +5,6 @@ _ebook
 
 # jekyll-deploy-shosetsu
 .deploy-shosetsu.yml
+
+# node dependencies
+node_modules/
