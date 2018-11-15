@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Your awesome title
-author: Your name
+author: フジ・ナカハラ
 description: >- # this means to ignore newlines until "url:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://fuji-nakahara.github.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 version: v0.1.0
 timezone: Asia/Tokyo
@@ -51,9 +51,9 @@ defaults:
       layout: novel
 
 # Theme settings
-homepage:
+homepage: https://fuji-nakahara.github.io/
 repository: fuji-nakahara/jekyll-theme-fuji
-google_analytics:
+google_analytics: UA-118273401-1
 show_ebooks_from_github_releases: true
 reverse_posts_order: false
 show_excerpts: true
