@@ -13,6 +13,8 @@ $line-height: 1.8;
 }
 
 .novel {
+  max-width: 690px;
+  margin: 0 auto;
   font-family: 'Noto Serif JP', serif;
   line-height: $line-height;
 
