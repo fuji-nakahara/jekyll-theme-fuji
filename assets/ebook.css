@@ -4,6 +4,10 @@ html {
   -webkit-writing-mode: vertical-rl;
 }
 
+body {
+  text-align: justify;
+}
+
 p {
   margin: 0;
 }
