@@ -19,6 +19,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'jekyll-octicons', '~> 8.1'
   spec.add_dependency 'jekyll-seo-tag', '~> 2.5'
 
-  spec.add_development_dependency 'bundler', '~> 1.16'
+  spec.add_development_dependency 'bundler', '~> 2.0'
   spec.add_development_dependency 'rake', '~> 12.0'
 end
