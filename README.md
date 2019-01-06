@@ -1,13 +1,13 @@
 # jekyll-theme-fuji
 
-Thids is Fuji Nakahara's Jekyll theme.
+This is Fuji Nakahara's Jekyll theme.
 
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem 'jekyll-theme-fuji', git: 'https://github.com/fuji-nakahara/jekyll-theme-fuji.git'
+gem 'jekyll-theme-fuji', github: 'fuji-nakahara/jekyll-theme-fuji'
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
