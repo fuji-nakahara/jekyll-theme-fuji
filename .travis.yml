@@ -1,0 +1,26 @@
+sudo: false
+
+language: ruby
+
+env:
+  global:
+    - JEKYLL_ENV=production
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+cache: bundler
+
+before_install:
+  - gem update --system
+  - gem install bundler
+
+script: bundle exec jekyll build
+
+deploy:
+  - provider: pages
+    github-token:
+      secure: "J6H4x6huAtLBB1+9tsjsbw+UpwsPTjp770pbysrmAyJVEbOb5V8pDpDt16FTp2TZ13vRO39XkLJwE5vujs+n/DTwdApapNK9Puy60bcuxwMlKsq4DHsY7YK45h/vuerJHR6aIebTZ849zczRQobYyjxIBnpmzPSncnqGXREd9m394NrizTBGlP8sADNGtAlEtM/uDM6NtSX6Fyg4xLRQakoEteA6DyGp/I9e7jA/1801MFLlpGfFvVlahltDbZzbp94LZFRdyI/ed5QWX7rxhqE/k1ZaNfzLc4Q+Vet84M5Z2R/eCWJVSwGrSWULMHdFnEyKe/TCRNE3I/54Wu1ENFtViSLudquF5xfdknsPvGHd5d1A4o4Tj5rGAIyNEaonyPel0Hh10Z2PYgls7tzBojWjjavmgaEkCEqukqghHHHKWtYvdXYw12Omg/Pci+xH6qGFie3CVKbfuO6mOjMaZFmInSoLVsKy411sZnSvZqbw0IfHyK9vFEi/QRbGug2vKJovkMYo3xuoUZ1dH8nZUzSTG4fJkNngo7RA6pmaPRLj6kUoUX+6rqnglVGaJZskYxoxlYtxJLcpEwEq1VL1E6fk8CufxGUnZOT2P3OtjzG2aXzaRuuj4yGcgbK5kXGrBzCZEXckqo/+ZWaUCd10IVlys3Vl3hUdd2WFmlXJDIs="
+    skip-cleanup: true
+    local-dir: _site
+    target_branch: gh-pages
+    on:
+      branch: master
