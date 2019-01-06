@@ -19,62 +19,36 @@ description: >- # this means to ignore newlines until "url:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+baseurl: /jekyll-theme-fuji # the subpath of your site, e.g. /blog
 url: https://fuji-nakahara.github.io # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
 version: v0.1.0
 timezone: Asia/Tokyo
 lang: ja_JP
 
 # Build settings
-markdown: FujiMarkdown
+markdown: kramdown
 theme: jekyll-theme-fuji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - package.json
-  - package-lock.json
-
-# Front Matter defaults
-permalink: none
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: novel
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
 # Theme settings
 homepage: https://fuji-nakahara.github.io/
 repository: fuji-nakahara/jekyll-theme-fuji
 google_analytics: UA-118273401-1
-show_ebooks_from_github_releases: true
+show_ebooks_from_github_releases: false
 reverse_posts_order: false
 show_excerpts: true
 show_date: true
 date_format: "%Y年%m月%d日"
 header_pages:
   - about.md
-
-# SEO
-twitter:
-  username: fuji_nakahara
-
-# Ebook settings
-ebook:
-  file_name: example
-  page_progression_direction: rtl
-
-# Deploy settings
-kakuyomu:
-  work_id: 1234567890123456789
-narou:
-  ncode: N9999ZZ
