@@ -15,7 +15,7 @@ layout: default
   <aside>
     <p>
       {%- if site.version -%}
-        <data value="{{ site.version }}">{{ site.version }}</data>・
+        <data value="{{ site.version }}">Version {{ site.version }}</data>・
       {%- endif -%}
       {%- assign date_format = site.date_format | default: '%Y-%m-%d' -%}
       <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: date_format }}</time>
