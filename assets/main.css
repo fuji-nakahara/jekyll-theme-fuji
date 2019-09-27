@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.jumbotron > #github-ribbon {
+  display: none; }
+  @media (min-width: 576px) {
+    .jumbotron > #github-ribbon {
+      display: block;
+      float: right;
+      margin-top: -4rem;
+      margin-right: -2rem; } }
+
+.novel {
+  max-width: 690px;
+  margin: 0 auto;
+  font-family: 游明朝, YuMincho, "ヒラギノ明朝 Pr6N", "Hiragino Mincho Pr6N", "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 StdN", "Hiragino Mincho StdN", HiraMinProN-W3, "Noto Serif JP", serif;
+  line-height: 1.8; }
+  .novel h1, .novel h2, .novel h3, .novel h4, .novel h5, .novel h6 {
+    margin-top: 1.25rem; }
+  .novel p {
+    margin: 0; }
+  .novel blockquote {
+    margin: 0.9rem 0;
+    color: #6c757d; }
+  .novel hr {
+    border: 0;
+    margin: 0;
+    height: 1.8rem; }
+  .novel em {
+    font-style: normal;
+    text-emphasis-style: filled dot;
+    -webkit-text-emphasis-style: filled dot; }
+  .novel pre {
+    white-space: pre-wrap; }
+  @media (min-width: 768px) {
+    .novel {
+      font-size: 1.25rem; }
+      .novel hr {
+        height: 2.25rem; } }
